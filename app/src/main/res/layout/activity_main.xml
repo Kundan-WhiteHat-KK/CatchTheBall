@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kk.solution.dev.catchtheball.MainActivity">
+
+    <TextView
+        android:id ="@+id/scoreLabel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Score:300"
+        android:textSize = '18sp'
+        android:background="#22FF0000"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical" />
+
+    <ImageButton
+        android:id="@+id/pauseBtn"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:src="@drawable/pause"
+        android:layout_marginLeft="10dp"
+        android:onClick="pausePushed" />
+
+
+    <FrameLayout
+        android:id ="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id ="@+id/skybox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/violet_sky"
+            android:scaleType="centerCrop">
+        </ImageView>
+
+        <TextView
+            android:id ="@+id/startLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='Tap To Start'
+            android:textSize ='30sp'
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:id = "@+id/box"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src ="@drawable/blocker_mad"
+            android:layout_gravity="center_vertical"
+            />
+        <ImageView
+            android:id = "@+id/fishswim"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src ="@drawable/fish_swim1"/>
+        <ImageView
+            android:id = "@+id/fly"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src ="@drawable/fly_fly1"/>
+        <ImageView
+            android:id = "@+id/slim"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src ="@drawable/slime_walk1"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>
