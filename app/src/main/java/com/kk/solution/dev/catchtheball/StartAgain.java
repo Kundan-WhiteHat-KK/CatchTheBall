@@ -44,7 +44,7 @@ public class StartAgain extends AppCompatActivity {
         interstitialAd.setAdListener(new AdListener() {
 
             public void onAdLoaded() {
-                displayInterstitialad();
+                displayInterstitialAd();
             }
 
             @Override
@@ -62,7 +62,7 @@ public class StartAgain extends AppCompatActivity {
         }
     }
 
-    public void displayInterstitialad() {
+    public void displayInterstitialAd() {
         if (interstitialAd.isLoaded()) {
             interstitialAd.show();
         }
